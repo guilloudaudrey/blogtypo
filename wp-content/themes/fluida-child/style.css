@@ -9,3 +9,177 @@
  Tags:         light, responsive-layout, accessibility-ready
  Text Domain:  fluida-child
 */
+
+
+/*bandeau*/
+
+.bandeau {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bandeau_img {
+    width: 100%;
+}
+
+.bandeau_titre {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+.bandeau_desc {
+    position: absolute;
+    color: white;
+    margin-top: 50px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/*valeurs*/
+
+.valeurs {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+    width: 150px;
+    font-size: 0.8em;
+}
+
+
+/*ou trouver*/
+
+.outrouver {
+    height: 100px;
+    background: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+}
+
+.outrouverh3 {
+    text-align: center;
+}
+
+.bloc_outrouver {
+    display: flex;
+}
+
+.bloc_outrouver1 {
+    width: 40%;
+    background: white;
+}
+
+.bloc_outrouver2 {
+    width: 30%;
+    background: white;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    border-left: 1px solid grey;
+}
+
+.bloc_outrouver3 {
+    width: 30%;
+    background: white;
+    padding-left: 40px;
+    border-left: 1px solid grey;
+}
+
+.bloc_outrouver2>h5 {
+    color: #006f45;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bloc_outrouver2>p>span {
+    color: #dd4321;
+    font-weight: bold;
+}
+
+.bloc_outrouver3>h5 {
+    color: #006f45;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*dernières news*/
+
+.lastnews {
+    background: white;
+    margin-bottom: 50px;
+}
+
+.lastnewstitle {
+    height: 100px;
+    background: white;
+    margin-top: 50px;
+}
+
+.lastnewsh3 {
+    line-height: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 640px) {
+    .valeurs {
+        display: block;
+    }
+}
+
+
+/*page producteurs*/
+
+.producteurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.producteur {
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: yellow;
+    border-radius: 100%;
+}
+
+.producteurs_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.p_prod {
+    text-align: center;
+    margin-bottom: 20px;
+}
