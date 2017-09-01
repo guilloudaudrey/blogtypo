@@ -10,18 +10,19 @@
 get_header();?>
 
 <div id="container" class="<?php echo fluida_get_layout_class(); ?>">
-	<main id="main" role="main" class="main">
-		<?php cryout_before_content_hook(); ?>
+
+<!--photo bandeau-->
+
+			<div class="bandeauprod" style="background-image: url('<?php the_field('visuel_principal'); ?>');" alt="valeur 1" /></div>
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); cryout_schema_microdata( 'article' );?>>
 				<div class="schema-image">
 					<?php cryout_featured_hook(); ?>
 				</div>
 
 				<div class="article-inner">
-			
+		
 					<header>
 						<?php cryout_post_title_hook(); ?>
 						<?php the_title( '<h1 class="entry-title" ' . cryout_schema_microdata( 'entry-title', 0 ) . '>', '</h1>' ); ?>
@@ -31,6 +32,20 @@ get_header();?>
 						</div><!-- .entry-meta -->
 
 					</header>
+					
+					
+
+	<main id="main" role="main" class="main">
+
+		<?php cryout_before_content_hook(); ?>
+		<div class="produits_prod">
+<h5>Les produits</h5>
+<p class="produits"><?php the_field('liste_produits')?></p>
+<h5>Présentation</h5>
+<p class="presentation">
+<?php the_field('presentation_prod')?>
+</p>
+</div>
 
 					<?php cryout_singular_before_inner_hook();  ?>
 
@@ -45,10 +60,7 @@ get_header();?>
 					} ?>
 
 
-<div class="bandeauprod"></div>
-	<p>blablablabla</p>
-
-
+<!--liste de produits-->
 
 
 					<footer class="entry-meta">
@@ -70,7 +82,7 @@ get_header();?>
 		<?php cryout_after_content_hook(); ?>
 	</main><!-- #main -->
 
-	<?php fluida_get_sidebar(); ?>
+
 </div><!-- #container -->
 
 <?php get_footer();

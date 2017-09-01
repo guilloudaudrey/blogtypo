@@ -79,6 +79,10 @@
     line-height: 100px;
 }
 
+iframe {
+    margin-left: 30px;
+}
+
 .outrouverh3 {
     text-align: center;
 }
@@ -154,32 +158,75 @@
 }
 
 
-/*page producteurs*/
+/* single page prods */
+
+.bandeauprod {
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photoprods {
+    width: 100
+}
+
+
+/*producteurs*/
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: white;
+    background-size: cover;
+    margin-top: 20px;
+}
 
 .producteurs {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 50px;
     width: 90%;
     margin: auto;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .producteur {
-    height: 200px;
     width: 200px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    background: yellow;
+}
+
+
+/*produits*/
+
+.cat_produits {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page_produits {
+    padding: 50px 100px;
+    margin: auto;
+}
+
+.container_produits {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.illus_produits {
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-}
-
-.producteurs_title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.p_prod {
-    text-align: center;
-    margin-bottom: 20px;
+    background: #006f45;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 50px;
+    margin-bottom: 30px;
 }

@@ -12,7 +12,6 @@
 		<aside id="colophon" role="complementary" <?php cryout_schema_microdata( 'sidebar' );?>>
 			<div id="colophon-inside" <?php fluida_footer_colophon_class();?>>
 				<?php get_sidebar( 'footer' );?>
-<p style="background: #36363a; margin-top: -100px">aaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			</div>
 		</aside><!-- #colophon -->
 	</div><!-- #main -->
