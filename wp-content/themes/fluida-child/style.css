@@ -199,6 +199,11 @@ iframe {
 
 /*produits*/
 
+.bandeau_produits {
+    height: 250px;
+    background-size: cover;
+}
+
 .cat_produits {
     margin: 10px;
     width: 300px;
@@ -208,7 +213,7 @@ iframe {
 }
 
 .page_produits {
-    padding: 50px 100px;
+    padding: 1px 100px;
     margin: auto;
 }
 

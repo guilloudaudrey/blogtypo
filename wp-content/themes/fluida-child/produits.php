@@ -16,13 +16,13 @@ Template Name: produits
 get_header(); ?>
 
 	<div id="container" class="<?php echo fluida_get_layout_class(); ?>">
-
+<div class="bandeau_produits" style="background-image: url('<?php the_field('bandeau_produits'); ?>');"></div>
 		<main id="main" role="main" class="main">
 			<?php cryout_before_content_hook(); ?>
 
-			
+		
 		<div class="page_produits">
-			<h3>Les produits</h3>
+			<h1>Les produits</h1>
 			<div class="container_produits">
 				<div class="cat_produits">
 					<h5>Légumes</h5>
