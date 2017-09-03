@@ -19,25 +19,35 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -60px;
 }
 
 .bandeau_img {
     width: 100%;
 }
 
-.bandeau_titre {
+.container_titre {
     position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    border: 10px double white;
+}
+
+.bandeau_titre {
     color: white;
     text-transform: uppercase;
     font-size: 5em;
+    margin-top: -10px;
 }
 
 .bandeau_desc {
-    position: absolute;
     color: white;
-    margin-top: 50px;
     font-size: 1.5em;
     text-align: center;
+    margin-top: -30px;
 }
 
 
@@ -158,6 +168,16 @@ iframe {
 }
 
 
+/*qui sommes-nous ?*/
+
+.bandeau_qui {
+    height: 250px;
+    background-size: cover;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+}
+
+
 /* single page prods */
 
 .bandeauprod {
@@ -178,9 +198,15 @@ iframe {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background: white;
+    background: #dd4321;
     background-size: cover;
     margin-top: 20px;
+}
+
+.page_producteurs {
+    padding: 50px 100px;
+    margin: auto;
+    background: white;
 }
 
 .producteurs {
@@ -222,6 +248,7 @@ iframe {
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .illus_produits {
@@ -234,4 +261,8 @@ iframe {
     background-position-x: 50px;
     background-position-y: 50px;
     margin-bottom: 30px;
+}
+
+.csColumn {
+    margin-left: 100px;
 }

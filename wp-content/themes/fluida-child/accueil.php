@@ -15,10 +15,12 @@ Template Name: accueil
 
 get_header();
 ?>
-<div class="bandeau">
-	<h1 class="bandeau_titre">Patur'Ain</h1>
-	<p class="bandeau_desc"><?php the_field('bandeau_desc'); ?></p>
-	<img src="<?php the_field('bandeau_img'); ?>" alt="image bandeau" class="bandeau_img" />
+<div class="bandeau" style="background-image:url('<?php the_field('bandeau_img'); ?>')">
+	<div class="container_titre">
+		<h1 class="bandeau_titre">Patur'Ain</h1>
+		<p class="bandeau_desc"><?php the_field('bandeau_desc'); ?></p>
+	</div>
+	<!--<img src="<?php the_field('bandeau_img'); ?>" alt="image bandeau" class="bandeau_img" />-->
 </div>
 
 

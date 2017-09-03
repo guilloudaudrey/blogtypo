@@ -21,10 +21,13 @@ Template Name: archive-prods
 <?php
 get_header(); 
 
-$args = array( 'post_type' => 'prods', 'posts_per_page' => 10 );
+$args = array( 'post_type' => 'prods', 'posts_per_page' => 20 );
 $loop = new WP_Query( $args );
 ?>
+<div class="page_producteurs">
+<h1 style="text-align: center">Les producteurs</h1>
 <div class="producteurs">
+
     <?php
 while ( $loop->have_posts() ) : $loop->the_post();
 ?>
@@ -50,6 +53,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 	<?php
 endwhile;
 ?>
+</div>
 </div>
 <?php
 

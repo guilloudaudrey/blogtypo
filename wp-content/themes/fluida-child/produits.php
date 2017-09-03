@@ -15,7 +15,7 @@ Template Name: produits
 
 get_header(); ?>
 
-	<div id="container" class="<?php echo fluida_get_layout_class(); ?>">
+	
 <div class="bandeau_produits" style="background-image: url('<?php the_field('bandeau_produits'); ?>');"></div>
 		<main id="main" role="main" class="main">
 			<?php cryout_before_content_hook(); ?>
@@ -60,6 +60,6 @@ get_header(); ?>
 		</div>
 		</main><!-- #main -->
 
-	</div><!-- #container -->
-
+	
+	
 <?php get_footer();

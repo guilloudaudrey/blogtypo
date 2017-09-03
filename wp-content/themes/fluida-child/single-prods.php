@@ -9,7 +9,7 @@
 
 get_header();?>
 
-<div id="container" class="<?php echo fluida_get_layout_class(); ?>">
+<div id="container">
 
 <!--photo bandeau-->
 
