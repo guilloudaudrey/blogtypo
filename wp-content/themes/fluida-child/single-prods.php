@@ -22,6 +22,7 @@ get_header();?>
 				</div>
 
 				<div class="article-inner">
+				
 		
 					<header>
 						<?php cryout_post_title_hook(); ?>

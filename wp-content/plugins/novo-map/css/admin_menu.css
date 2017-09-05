@@ -1,0 +1,48 @@
+fieldset
+{
+  border: solid;
+  padding: 5px;
+  width: 750px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+fieldset .nested
+{
+  border: solid;
+  padding: 5px;
+  width: 700px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-color: #ababab;
+}
+
+fieldset label
+{
+  display: inline-block;
+  width: 300px;
+  margin-right: 50px;
+}
+
+fieldset legend
+{
+  font-weight: bold;
+}
+
+label
+{
+  margin-bottom: 10px;
+}
+
+input
+{
+  display: inline-block;
+}
+
+#admin_submit
+{
+  display: block;
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}

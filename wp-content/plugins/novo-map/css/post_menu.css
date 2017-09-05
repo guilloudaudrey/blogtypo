@@ -1,0 +1,17 @@
+#Novo_map_menu label
+{
+  width: 350px;
+  display: inline-block;
+}
+
+#Novo_description_label
+{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50px;
+}
+
+#Novo_map_menu label
+{
+  font-weight: bold;
+}

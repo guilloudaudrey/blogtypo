@@ -34,6 +34,7 @@
     background: rgba(255, 255, 255, 0.3);
     padding: 50px;
     border: 10px double white;
+    text-shadow: 2px 1px 2px #777373;
 }
 
 .bandeau_titre {
@@ -104,12 +105,13 @@ iframe {
 .bloc_outrouver1 {
     width: 40%;
     background: white;
+    margin-bottom: 40px;
 }
 
 .bloc_outrouver2 {
     width: 30%;
     background: white;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     padding-left: 40px;
     border-left: 1px solid grey;
 }
@@ -119,6 +121,7 @@ iframe {
     background: white;
     padding-left: 40px;
     border-left: 1px solid grey;
+    margin-bottom: 40px;
 }
 
 .bloc_outrouver2>h5 {
@@ -156,15 +159,6 @@ iframe {
     line-height: 100px;
     text-align: center;
     padding-bottom: 100px;
-}
-
-
-/*media queries*/
-
-@media screen and (max-width: 640px) {
-    .valeurs {
-        display: block;
-    }
 }
 
 
@@ -265,4 +259,43 @@ iframe {
 
 .csColumn {
     margin-left: 100px;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 640px) {
+    .valeurs {
+        display: block;
+    }
+    .container_titre {
+        padding: 20px;
+    }
+    .uiScaledImageContainer {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .bloc_outrouver {
+        display: flex;
+        flex-direction: column;
+    }
+    .bloc_outrouver1 {
+        width: 90%;
+    }
+    .bloc_outrouver2 {
+        width: 90%;
+    }
+    .bloc_outrouver3 {
+        width: 90%;
+    }
+    iframe {
+        width: 80%;
+        height: 250px;
+    }
+    #colophon-inside {
+        display: flex;
+        flex-direction: column;
+    }
 }
