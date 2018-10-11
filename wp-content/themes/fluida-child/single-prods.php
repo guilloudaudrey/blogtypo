@@ -13,7 +13,6 @@ get_header();?>
 
 <!--photo bandeau-->
 
-			<div class="bandeauprod" style="background-image: url('<?php the_field('visuel_principal'); ?>');" alt="valeur 1" /></div>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); cryout_schema_microdata( 'article' );?>>
@@ -40,30 +39,21 @@ get_header();?>
 
 		<?php cryout_before_content_hook(); ?>
 		<div class="produits_prod">
-<h5>Les produits</h5>
-<p class="produits"><?php the_field('liste_produits')?></p>
-<h5>Présentation</h5>
-<p class="presentation">
-<?php the_field('presentation_prod')?>
-</p>
-</div>
+            <p class="presentation">
+                <?php the_field('presentation_prod')?>
+            </p>
+        </div>
 
-					<?php cryout_singular_before_inner_hook();  ?>
+        <?php cryout_singular_before_inner_hook();  ?>
+        <div class="entry-content" <?php cryout_schema_microdata('entry-content'); ?>>
+            <?php the_content(); ?>
+            <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'fluida' ), 'after' => '</span></div>' ) ); ?>
+        </div><!-- .entry-content -->
 
-					<div class="entry-content" <?php cryout_schema_microdata('entry-content'); ?>>
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'fluida' ), 'after' => '</span></div>' ) ); ?>
-					</div><!-- .entry-content -->
-
-					<?php if ( get_the_author_meta( 'description' ) ) {
-							// If a user has filled out their description, show a bio on their entries
-							get_template_part( 'content/author-bio' );
-					} ?>
-
-
-<!--liste de produits-->
-
-
+        <?php if ( get_the_author_meta( 'description' ) ) {
+            // If a user has filled out their description, show a bio on their entries
+            get_template_part( 'content/author-bio' );
+        } ?>
 					<footer class="entry-meta">
 						<?php cryout_post_footer_hook(); ?>
 					</footer><!-- .entry-meta -->

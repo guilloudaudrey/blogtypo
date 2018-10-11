@@ -25,7 +25,7 @@ $args = array( 'post_type' => 'prods', 'posts_per_page' => 20 );
 $loop = new WP_Query( $args );
 ?>
 <div class="page_producteurs">
-<h1 style="text-align: center">Les producteurs</h1>
+<h1 style="text-align: center">L'équipe</h1>
 <div class="producteurs">
 
     <?php
@@ -34,7 +34,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
-    <a href="<?php echo get_page_link(40); ?>"><div class="producteur">
+    <a href="<?php echo the_permalink(); ?>"><div class="producteur">
         <div class="thumbnail" style="background-image: url('<?php echo $thumb['0']; ?>')"></div>
         <div class="titre" style="text-align:center">
 <?php
